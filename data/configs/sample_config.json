@@ -1,0 +1,4 @@
+{
+    "rag_mode": "default",
+    "save_retrieval_path":"data/annotations/vlm_annotations/wc_rag_mmE5_topk100.json"
+}
