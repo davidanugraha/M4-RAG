@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Installation](#installation)
+- [Setup](#setup)
 - [Datasets](#datasets)
 - [Repository Structure](#repository-structure)
 - [Citation](#citation)
@@ -23,7 +23,7 @@ We introduce **M4-RAG**, a massive-scale benchmark covering **42 languages** and
 
 Our systematic evaluation reveals a critical insight: **although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance**, exposing a fundamental mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.
 
-## Installation
+## Setup
 
 ### Prerequisites
 
@@ -57,6 +57,22 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+### Image Setup
+
+After installation, you need to place image directories in the root folder:
+
+```bash
+# Create directories for images
+mkdir -p cvqa_images images
+
+# Download CVQA images from HuggingFace and place in cvqa_images/
+# Download WorldCuisines images from HuggingFace and place in images/
+```
+
+The images are available as part of the respective HuggingFace datasets:
+- CVQA images: Part of [`davidanugraha/cvqa`](https://huggingface.co/datasets/davidanugraha/cvqa)
+- WorldCuisines images: Part of [`worldcuisines/vqa-v1.1`](https://huggingface.co/datasets/worldcuisines/vqa-v1.1)
 
 ## Datasets
 
