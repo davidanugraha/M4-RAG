@@ -1,0 +1,67 @@
+# M4-RAG Dependencies
+# Python 3.12.11 required
+
+# Core ML Libraries
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+transformers==4.57.1
+accelerate==1.11.0
+
+# Vision-Language Model Support
+qwen-vl-utils==0.0.14
+decord==0.6.0
+av==16.0.1
+opencv-python-headless==4.12.0.88
+pillow==12.0.0
+
+# Embedding and Retrieval
+sentence-transformers==5.1.2
+faiss-cpu  # Use faiss-gpu for GPU support
+
+# NLP Processing
+spacy==3.8.7
+sentencepiece==0.2.1
+tiktoken==0.12.0
+tokenizers==0.22.1
+
+# Dataset Processing
+datasets==4.3.0
+pandas==2.3.3
+pyarrow==22.0.0
+fastparquet==2024.11.0
+
+# vLLM Inference (optional, for faster inference)
+vllm==0.11.0
+xformers==0.0.32.post1
+triton==3.4.0
+
+# HuggingFace Utilities
+huggingface-hub==0.36.0
+hf-transfer==0.1.9
+
+# Scientific Computing
+numpy==2.2.6
+scipy==1.16.2
+scikit-learn==1.7.2
+
+# Text Processing and Utilities
+beautifulsoup4==4.14.2
+pyyaml==6.0.3
+tqdm==4.67.1
+requests==2.32.5
+aiohttp==3.13.1
+
+# API and Server (for vLLM server mode)
+fastapi==0.120.0
+uvicorn==0.38.0
+pydantic==2.12.3
+
+# Miscellaneous
+cloudpickle==3.1.1
+joblib==1.5.2
+psutil==7.1.2
+rich==14.2.0
+
+# NVIDIA CUDA Libraries (automatically installed with torch if using CUDA)
+# Ensure CUDA 11.8+ is installed on your system
